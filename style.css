@@ -60,8 +60,12 @@ nav .nav-heading {
 }
 
 .nav-item{
-    padding: 0;
+    padding: 5px;
     margin-bottom: 10px;
+}
+
+.option:hover {
+    transform: scale(1.2);
 }
 
 .toggle-bars{
@@ -100,6 +104,19 @@ nav .nav-heading {
     align-items: center;
     justify-content: center;
     padding: 20px;
+}
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+.animate {
+    animation: slideIn 1s ease-out;
 }
 
 .display-text, #timer {
@@ -152,6 +169,7 @@ nav .nav-heading {
     font-weight: 700;
     font-size: 1.2rem;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: transform 0.3s ease; /* Smooth transition for transform */
 }
 
 .option:hover {

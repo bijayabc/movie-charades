@@ -29,6 +29,12 @@ function generateSelection(choice) {
             }
             
             const displayText = document.getElementsByClassName("display-text")[0]
+            
+            // Reset the animation by temporarily removing the class
+            displayText.classList.remove('animate');
+            void displayText.offsetWidth; // Trigger reflow to reset animation
+            displayText.classList.add('animate'); // Reapply the animation class
+
             displayText.innerHTML = displayItem
 
             // timer display
