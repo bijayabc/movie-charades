@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <nav>
+            <div class="toggle-bars" id="toggle-button">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-heading">Dumb Charades</div>
+            <ul class="nav-links">
+                <li class="nav-item"><a href="#instructions-header">How To Play</a></li>
+                <li class="nav-item"><a href="#message">Contact Editor</a></li>
+                <li class="nav-item"><a href="#icon-container">Social Media</a></li>
+            </ul>
+        </nav>
+    
+        <h1 class="heading">You get</h1>
+    
+        <div class="display-card">
+            <div class="display-text"></div>
+        </div>
+    
+        <div id="timer" class="timer-container">
+            <div class="time"></div>
+        </div>
+    
+        <div class="options-container"> 
+            <div class="option" id="kollywood">Kollywood</div>
+            <div class="option" id="bollywood">Bollywood</div>
+            <div class="option" id="hollywood">Hollywood</div>
+            <div class="option" id="editor">Editor's Choice</div>
+            <div class="option" id="random">Random Option</div>
+        </div>
+    
+        <div class="instructions">
+            <h2 id="instructions-header" class="section">How To Play</h2>
+            <p id="instruction-text">
+                Charades is a game where players split into teams and 
+                take turns acting out words or phrases without speaking, 
+                using only gestures and movements to convey the clue to their teammates. 
+                The acting team tries to guess the correct answer within a time limit 
+                (60 seconds above), while the actor can indicate correct guesses with nods 
+                or shakes. Each correct guess earns the team a point, and teams alternate 
+                roles after each round. The game continues until a team reaches a predetermined 
+                score, who is then crowned winner. Select an option to get started.
+            </p>
+        </div>
+    
+        <form action="https://api.web3forms.com/submit" method="POST" id="message">
+            <h2 class="section">Messages/Suggestions</h2>
+            <input type="hidden" name="access_key" value="cc8724e5-ff4c-4a5d-9355-19ebff4b5197">
+            <input type="text" name="Name" id="name" placeholder="Full name" required>
+            <input type="email" name="Email" id="email" placeholder="Email address" required>
+            <textarea id="input-message" name="Message" rows="4" placeholder="Input messages / suggestions here...." required></textarea>
+            
+            <button>Submit</button>
+        </form> 
+    
+    
+        <footer id="icon-container">
+            <div class="icon" id="instagram-container">
+                <img src="images/Instagram_icon.png.webp" alt="Instagram Icon" id="instagram">
+                <a href="https://www.instagram.com/bijay.bc/" target="_blank"><p>u/bijay.bc</p></a>
+            </div>
+            <div class="icon" id="github-container">
+                <img src="images/github-icon.png" alt="Github Icon" id="github">
+                <a href="https://github.com/bijayabc" target="_blank"><p>u/bijayabc</p></a>
+            </div>
+            <div class="icon" id="linkedin-container">
+                <img src="images/linkedin-icon.jpeg" alt="Linkedin Icon" id="linkedin">
+                <a href="https://www.linkedin.com/in/bijayabc/" target="_blank"><p>u/bijayabc</p></a>
+            </div>
+        </footer>
+        
+    
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
+
+
+
