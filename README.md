@@ -1,4 +1,4 @@
-# Dumb Charades Web App
+# Movie Charades Web App
 
 This is a web application for playing Dumb Charades, where users can select categories and get random titles (movies, stars, songs) to act out. The app also includes a 60 timer for each title and an option for users to send messages or suggestions.
 
